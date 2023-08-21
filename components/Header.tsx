@@ -11,10 +11,13 @@ const Header: React.FC = () => {
 	const size = useWindowSize();
 	const [openMenu, setOpenMenu] = useState(false);
 	const handleMenuClick = () => {
+		let root = document.getElementsByTagName("html")[0];
 		if (!openMenu) {
 			document.body.classList.add("overflow-y-hidden");
+			root.classList.add("overflow-y-hidden");
 		} else {
 			document.body.classList.remove("overflow-y-hidden");
+			root.classList.remove("overflow-y-hidden");
 		}
 		setOpenMenu(!openMenu);
 	};
