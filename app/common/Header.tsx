@@ -18,7 +18,6 @@ const Header: React.FC = () => {
 		router.push("/");
 	};
 	const handleMenuClick = () => {
-		debugger;
 		let root = document.getElementsByTagName("html")[0];
 		if (!openMenu) {
 			document.body.classList.add("overflow-y-hidden");
