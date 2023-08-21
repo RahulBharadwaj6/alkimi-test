@@ -14,6 +14,7 @@ const Header: React.FC = () => {
 	const size = useWindowSize();
 	const [openMenu, setOpenMenu] = useState(false);
 	const handleHomeClick = () => {
+		addRemoveOverFlow(false);
 		router.push("/");
 	};
 	const handleMenuClick = () => {
