@@ -15,7 +15,7 @@ const Menu: React.FC<MyComponentProps> = ({ openMenu, setOpenMenu }) => {
 					<li className="font-semibold">
 						<Link
 							onClick={() => {
-								addRemoveOverFlow(openMenu);
+								addRemoveOverFlow(!openMenu);
 								setOpenMenu(!openMenu);
 							}}
 							href="/aboutus"
@@ -26,7 +26,7 @@ const Menu: React.FC<MyComponentProps> = ({ openMenu, setOpenMenu }) => {
 					<li className="font-semibold">
 						<Link
 							onClick={() => {
-								addRemoveOverFlow(openMenu);
+								addRemoveOverFlow(!openMenu);
 								setOpenMenu(!openMenu);
 							}}
 							href="/contact"
@@ -37,7 +37,7 @@ const Menu: React.FC<MyComponentProps> = ({ openMenu, setOpenMenu }) => {
 					<li className="font-semibold">
 						<Link
 							onClick={() => {
-								addRemoveOverFlow(openMenu);
+								addRemoveOverFlow(!openMenu);
 								setOpenMenu(!openMenu);
 							}}
 							href="/download"
@@ -48,7 +48,7 @@ const Menu: React.FC<MyComponentProps> = ({ openMenu, setOpenMenu }) => {
 					<li className="font-semibold">
 						<Link
 							onClick={() => {
-								addRemoveOverFlow(openMenu);
+								addRemoveOverFlow(!openMenu);
 								setOpenMenu(!openMenu);
 							}}
 							href="/careers"

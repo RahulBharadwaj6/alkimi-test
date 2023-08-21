@@ -13,8 +13,11 @@ const Header: React.FC = () => {
 	const router = useRouter();
 	const size = useWindowSize();
 	const [openMenu, setOpenMenu] = useState(false);
+	const handleHomeClick = () => {
+		router.push("/");
+	};
 	const handleMenuClick = () => {
-		addRemoveOverFlow(openMenu);
+		addRemoveOverFlow(!openMenu);
 		setOpenMenu(!openMenu);
 	};
 	return (
@@ -22,8 +25,7 @@ const Header: React.FC = () => {
 			<div
 				className="flex items-center cursor-pointer"
 				onClick={() => {
-					// handleMenuClick();
-					router.push("/");
+					handleHomeClick();
 				}}
 			>
 				<Image src={logo} alt="logo" width={30} height={18} className="mr-2" />

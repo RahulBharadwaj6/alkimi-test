@@ -1,6 +1,6 @@
 export default function addRemoveOverFlow(isTrue: boolean) {
 	let root = document.getElementsByTagName("html")[0];
-	if (!isTrue) {
+	if (isTrue) {
 		document.body.classList.add("overflow-y-hidden");
 		root.classList.add("overflow-y-hidden");
 	} else {
