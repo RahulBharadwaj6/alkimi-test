@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import Slider from "./Slider";
 import Link from "next/link";
-import addRemoveOverFlow from "@/utils/addRemoveOverFlow";
+
 interface MyComponentProps {
 	openMenu: boolean;
 	setOpenMenu: React.Dispatch<React.SetStateAction<boolean>>;
